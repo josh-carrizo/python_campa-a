@@ -11,6 +11,7 @@ if __name__ == "__main__":
         
         nuevo_sub_tipo = input("Por favor ingrese un nuevo subtipo para el anuncio (instream/outstream): ")
         campaña.anuncios[0].sub_tipo = nuevo_sub_tipo
+        print(campaña)
 
     except (LargoExcedidoError, SubTipoInvalidoError) as e:
         with open("error.log", "a") as error_log:
