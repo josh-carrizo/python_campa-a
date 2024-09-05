@@ -4,7 +4,7 @@
 from anuncio import Video, Social, Display
 from error import LargoExcedidoError
 
-class Campaña:
+class Campaña():
     def __init__(self, nombre: str, fecha_inicio: str, fecha_termino: str, anuncios: list = None):
         self.nombre = nombre
         self.fecha_inicio = fecha_inicio
